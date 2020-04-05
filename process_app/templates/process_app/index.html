@@ -1,0 +1,17 @@
+{% extends "process_app/base.html" %}
+{% block content %}
+
+        <form id="upload_image_form" method="post" enctype="multipart/form-data"
+                action="{% url 'process_app:upload_image' %}">
+            {% csrf_token %}
+            <p>Загрузите картину в формате JPEG, PNG</p>
+            <p>
+                <input type="file" name="img" accept="image/*" onchange="renderImage(this)">
+                <input type="submit" value="Отправить на проверку">
+            </p>
+        </form>
+        <img id='render' src="" alt='Изображение'>
+        <div id='result'></div>
+
+
+{% endblock content %}

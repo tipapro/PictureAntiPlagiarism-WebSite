@@ -1,6 +1,6 @@
 from django.db import models
 
 
-class UploadImage(models.Model):
-    image = models.ImageField(upload_to='image_temp', null=True, blank=True)
+class UploadedImage(models.Model):
+    image = models.ImageField(upload_to='MEDIA_ROOT', null=True, blank=True)
 

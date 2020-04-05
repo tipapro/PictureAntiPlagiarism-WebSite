@@ -1,8 +1,8 @@
 from django import forms
-from process_app.models import UploadImage
+from process_app.models import UploadedImage
 
 
-class UploadImageForm(forms.ModelForm):
+class UploadedImageForm(forms.ModelForm):
     class Meta:
-        model = UploadImage
+        model = UploadedImage
         fields = ('image',)
