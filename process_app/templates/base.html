@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+    <style>
+        a {
+            text-decoration: none;
+            /* Отменяем подчеркивание у ссылки */
+        }
+    </style>
+    <title>Сайт по поиску плагиата</title>
+
+    <script>
+        async function sendImage(form) {
+            event.preventDefault();
+            const scriptURL = "";
+
+            var loading = document.createElement('div')
+            loading.classList.add('lds-facebook');
+            loading.innerHTML = "<div></div><div></div><div></div>"
+            document.getElementById('top').appendChild(loading);
+            //alert("Изображение отправлено на проверку");
+
+            let response = await fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+
+            let result = await response.json();
+            document.getElementById('result').innerHTML = result.message; //сервер должен вернуть ответ в формате "{message:'Ваше изображение - фейк'}"
+
+            document.getElementById('top').querySelector('lds-facebook').remove()
+        }
+
+        function renderImage(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#render').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]); // convert to base64 string
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <a href="#top" title="Anti-plagiarism paintings" onclick="slowScroll('#top')">Anti-plagiarism paintings</a>
+
+        </div>
+        <div id="about">
+            <a href="#main" title="Описание системы" onclick="slowScroll('#main')">Описание системы</a>
+           <!-- <a href="#contacts" title="Контакты" onclick="slowScroll('#contact')">Контакты</a>
+            <a href="#faq" title="FAQ" onclick="slowScroll('#faq')">FAQ</a>-->
+        </div>
+    </header>
+    <div id="top">
+        {% block content %} {% endblock content %}
+    </div>
+
+
+
+
+
+    </div>
+    <div id="main">
+        <div class="intro">
+            <h3>Описание системы созданной при помощи нейронной сети: </h3>
+        </div>
+        <div class="text">
+            <span>Разнообразный и богатый опыт сложившаяся структура организации в значительной степени
+                обуславливает создание системы обучения кадров, соответствует насущным потребностям.
+                Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                нашей деятельности обеспечивает широкому кругу (специалистов)
+                участие в формировании существенных финансовых и административных условий.</span>
+        </div>
+
+    </div>
+
+   <!-- <div id="contacts">
+        <center>
+            <h5>Обратная связь</h5>
+        </center>
+        <form id="form_input" action="" method="">
+            <div class="wrapper">
+                <label for="name">Имя: <span>*</span></label><br>
+                <input type="text" placeholder="Введите имя: " name="name" id="name"><br>
+                <label for="email">Адрес электронной почты: <span>*</span></label><br>
+                <input type="email" placeholder="Введите email: " name="email" id="email"><br>
+                <label for="message">Сообщение: <span>*</span></label><br>
+                <textarea placeholder="Введите ваше сообщение: " name="message" id="message"></textarea><br>
+                
+                <button type="submit">Отправить</button>
+                <div id="mess_send" class="btn">Отправить </div>
+            </div>
+        </form>
+    </div>
+    <div id="faq">
+
+        <h6>Frequently Asked Questions</h6>
+        <div class="wrapper">
+            <div>
+                <span class="title">Когда работы над сайтом будут завершены?</span>
+                <p>Мы прилагаем все усилия, чтобы добавить как можно больше контента. Мы не едим и не спим уже очень
+                    давно,
+                    мы забыли лица некоторых членов нашей семьи, но не волнуйтесь, скоро все будет готово.</p>
+            </div>
+            <div><span class="title">Могу ли я обратиться к вам по поводу рекламы?</span>
+                <p>Мы еще не до конца запустили процесс рекламного взаимодействия, но мы постоянно находимся в поиске
+                    партнеров.
+                    Отправьте нам письмо по электронной почте со страницы “Обратная связь”.</p>
+            </div>
+            <div><span class="title">Кто ваши разработчики?</span>
+                <p>Наши разработчики – это студенты Моковского Политехнического университета.
+                    Они молоды и добились определенных успехов в веб-пространстве и в обучении нейронных сетей.</p>
+            </div>
+        </div>
+
+
+    </div>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+
+            $(document).on("scroll", function () {
+                if ($(window).scrollTop() === 0)
+                    $("header").removeClass("fixed");
+                else
+                    $("header").attr("class", "fixed");
+            });
+    </script>
+</body>
+
+</html>

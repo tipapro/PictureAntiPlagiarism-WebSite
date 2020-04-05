@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Система распознания картин на подлиность</h2>
+        <p>Загрузите картину в формате JPEG, PNG</p>
+        <form action="{% url 'process_app:upload_image' %}"
+              method="post" enctype="multipart/form-data" onsubmit="sendImage(this)">
+
+            {% csrf_token %}
+            <p>
+                <input type="file" name="img" accept="image/*" onchange="renderImage(this)">
+                <input type="submit" value="Отправить на проверку">
+            </p>
+        </form>
+        <img id='render' src="" alt='Изображение'></img>
+        <div id='result'></div>
+
+<!-- <h2>Система распознания картин на подлиность</h2>-->
+<!--        <p>Загрузите картину в формате JPEG, PNG</p>-->
+<!--        <form action="{% url 'process_app:upload_image' %}" method="post" enctype="multipart/form-data">-->
+<!--            {% csrf_token %}-->
+<!--            <input type="file" name="img" accept="image/*">-->
+<!--            <button type="submit">Отправить на проверку</button>-->
+<!--        </form>-->
+<!--        <img id='render' src="" alt='Изображение'></img>-->
+<!--        <div id='result'></div>-->
+{% endblock content %}
