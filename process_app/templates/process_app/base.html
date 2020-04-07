@@ -6,15 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}">
     <style>
         a {
             text-decoration: none;
             /* Отменяем подчеркивание у ссылки */
         }
     </style>
-    <title>Сайт по поиску плагиата</title>
+    <title>Поиск плагиата</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
+    <script type="text/javascript">
         function slowScroll(id) {
             $('html, body').animate({
                 scrollTop: $(id).offset().top
