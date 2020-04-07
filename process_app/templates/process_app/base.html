@@ -13,31 +13,17 @@
             /* Отменяем подчеркивание у ссылки */
         }
     </style>
-    <title>Поиск плагиата</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        function slowScroll(id) {
-            $('html, body').animate({
-                scrollTop: $(id).offset().top
-            }, 50000);
-
-            $(document).on("scroll", function () {
-                if ($(window).scrollTop() === 0)
-                    $("header").removeClass("fixed");
-                else
-                    $("header").attr("class", "fixed");
-            });
-    </script>
+    <title>Анти-плагиат изображений</title>
 </head>
 
 <body>
     <header>
-        <div id="logo" onclick="slowScroll('#top')">
-            <a href="#top" title="Anti-plagiarism paintings" onclick="slowScroll('#top')">Anti-plagiarism paintings</a>
+        <div id="logo">
+            <a href="#top" title="Anti-plagiarism paintings">Поиск плагиата</a>
 
         </div>
         <div id="about">
-            <a href="#main" title="Описание системы" onclick="slowScroll('#main')">Описание системы</a>
+            <a href="#main" title="Описание системы">Описание системы</a>
            <!-- <a href="#contacts" title="Контакты" onclick="slowScroll('#contact')">Контакты</a>
             <a href="#faq" title="FAQ" onclick="slowScroll('#faq')">FAQ</a>-->
         </div>
