@@ -19,3 +19,24 @@
 	});
 
 });
+
+async function sendImage(form) {
+	event.preventDefault();
+    const scriptURL = "";
+
+    var loading = document.createElement('div')
+    loading.classList.add('lds-facebook');
+    loading.innerHTML = "<div></div><div></div><div></div>"
+    document.getElementById('top').appendChild(loading);
+    alert("Изображение отправлено на проверку");
+
+    let response = await fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+    })
+
+    let result = await response.json();
+    document.getElementById('result').innerHTML = result.message; //сервер должен вернуть ответ в формате "{message:'Ваше изображение - фейк'}"
+
+    document.getElementById('top').querySelector('lds-facebook').remove()
+}

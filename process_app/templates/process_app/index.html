@@ -1,17 +1,28 @@
 {% extends "process_app/base.html" %}
 {% block content %}
+        <script type="text/javascript">
+            function renderImage(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
 
+                    reader.onload = function (e) {
+                        $('#render').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]); // convert to base64 string
+                }
+            }
+        </script>
         <form id="upload_image_form" method="post" enctype="multipart/form-data"
                 action="{% url 'process_app:upload_image' %}">
             {% csrf_token %}
             <p>Загрузите картину в формате JPEG, PNG</p>
             <p>
                 <input type="file" name="img" accept="image/*" onchange="renderImage(this)">
-                <input type="submit" value="Отправить на проверку">
+                <input type="submit" value="Отправить на проверку" onsubmit="">
             </p>
         </form>
         <img id='render' src="" alt='Изображение'>
         <div id='result'></div>
-
 
 {% endblock content %}

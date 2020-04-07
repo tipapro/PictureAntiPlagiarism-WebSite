@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42db815f-8547-4b5e-9f0c-6840c00551ab" name="Default Changelist" comment="" />
+    <list default="true" id="42db815f-8547-4b5e-9f0c-6840c00551ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antiplagiat/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiat/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antiplagiat/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiat/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,9 +34,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -52,13 +62,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586089448129" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1586089451955">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1586252279181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586089451955" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586082746952">
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586252279181" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586252244253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586082746952" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586252244253" />
   </component>
 </project>

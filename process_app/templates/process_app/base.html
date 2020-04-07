@@ -14,39 +14,19 @@
     </style>
     <title>Сайт по поиску плагиата</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        async function sendImage(form) {
-            event.preventDefault();
-            const scriptURL = "";
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 50000);
 
-            var loading = document.createElement('div')
-            loading.classList.add('lds-facebook');
-            loading.innerHTML = "<div></div><div></div><div></div>"
-            document.getElementById('top').appendChild(loading);
-            //alert("Изображение отправлено на проверку");
-
-            let response = await fetch(scriptURL, {
-                method: 'POST',
-                body: new FormData(form)
-            })
-
-            let result = await response.json();
-            document.getElementById('result').innerHTML = result.message; //сервер должен вернуть ответ в формате "{message:'Ваше изображение - фейк'}"
-
-            document.getElementById('top').querySelector('lds-facebook').remove()
-        }
-
-        function renderImage(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    $('#render').attr('src', e.target.result);
-                }
-
-                reader.readAsDataURL(input.files[0]); // convert to base64 string
-            }
-        }
+            $(document).on("scroll", function () {
+                if ($(window).scrollTop() === 0)
+                    $("header").removeClass("fixed");
+                else
+                    $("header").attr("class", "fixed");
+            });
     </script>
 </head>
 
@@ -129,20 +109,6 @@
 
     </div>-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        function slowScroll(id) {
-            $('html, body').animate({
-                scrollTop: $(id).offset().top
-            }, 500);
-
-            $(document).on("scroll", function () {
-                if ($(window).scrollTop() === 0)
-                    $("header").removeClass("fixed");
-                else
-                    $("header").attr("class", "fixed");
-            });
-    </script>
 </body>
 
 </html>

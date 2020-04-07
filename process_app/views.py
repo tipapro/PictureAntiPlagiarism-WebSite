@@ -31,7 +31,6 @@ def upload_image(request):
                 fs = FileSystemStorage()
                 name = fs.save(uploaded_image.name, uploaded_image)
                 url = fs.url(name)
-                # UploadedImage.image = upload_image()
     else:
         form = UploadedImageForm()
     return render(request, 'process_app/index.html', {'form': form})
