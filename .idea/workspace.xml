@@ -4,12 +4,9 @@
     <list default="true" id="42db815f-8547-4b5e-9f0c-6840c00551ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/antiplagiat/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiat/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/antiplagiat/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiat/static/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

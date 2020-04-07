@@ -60,7 +60,7 @@ img[src='']{
     display: none;
 }
 img{
-    max-height: 400px;
+    max-height: 250px;
     margin: 10px;
     border-radius: 10px;
     object-fit: cover;
