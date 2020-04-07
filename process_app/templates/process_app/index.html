@@ -14,31 +14,32 @@
                 }
             }
         </script>
-        <script type="text/javascript">
-            // Анимация и отправка формы
-            async function sendImage(form) {
-                event.preventDefault();
-                const scriptURL = "";
+<!--        <script type="text/javascript">-->
+<!--            // Анимация и отправка формы-->
+<!--            async function sendImage(form) {-->
+<!--                event.preventDefault();-->
+<!--                const scriptURL = "";-->
 
-                var loading = document.createElement('div')
-                loading.classList.add('lds-facebook');
-                loading.innerHTML = "<div></div><div></div><div></div>"
-                document.getElementById('top').appendChild(loading);
-                //alert("Изображение отправлено на проверку");
+<!--                var loading = document.createElement('div')-->
+<!--                loading.classList.add('lds-facebook');-->
+<!--                loading.innerHTML = "<div></div><div></div><div></div>"-->
+<!--                document.getElementById('top').appendChild(loading);-->
+<!--                //alert("Изображение отправлено на проверку");-->
 
-                let response = await fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
+<!--                let response = await fetch(scriptURL, {-->
+<!--                    method: 'POST',-->
+<!--                    body: new FormData(form)-->
+<!--                })-->
 
-                let result = await response.json();
-                document.getElementById('result').innerHTML = result.message; //сервер должен вернуть ответ в формате "{message:'Ваше изображение - фейк'}"
+<!--                let result = await response.json();-->
+<!--                document.getElementById('result').innerHTML = result.message; //сервер должен вернуть ответ в формате "{message:'Ваше изображение - фейк'}"-->
 
-                document.getElementById('top').querySelector('lds-facebook').remove()
-            }
-        </script>
+<!--                document.getElementById('top').querySelector('lds-facebook').remove()-->
+<!--            }-->
+<!--        </script>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
+            // Загрузка изображения на Imgur
             $("document").ready(function () {
 
                 $('input[type=file]').on("change", function () {
@@ -92,13 +93,12 @@
         </script>
 
 
-
         <form id="upload_image_form" method="post" enctype="multipart/form-data"
-                action="{% url 'process_app:upload_image' %}" onsubmit="sendImage(this)">
+                action="{% url 'process_app:upload_image' %}">
             {% csrf_token %}
             <p>Загрузите картину в формате JPEG, PNG</p>
             <p>
-                <input type="file" class="imgur" name="img" accept="image/*"
+                <input id = "image_input" type="file" class="imgur" name="img" accept="image/*"
                        onchange="renderImage(this)">
                 <input type="submit" value="Отправить на проверку">
             </p>
