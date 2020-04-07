@@ -1,0 +1,109 @@
+{% extends "process_app/base.html" %}
+{% block content %}
+        <script type="text/javascript">
+            // Отображение загруженного изображения
+            function renderImage(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#render').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]); // convert to base64 string
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            // Анимация и отправка формы
+            async function sendImage(form) {
+                event.preventDefault();
+                const scriptURL = "";
+
+                var loading = document.createElement('div')
+                loading.classList.add('lds-facebook');
+                loading.innerHTML = "<div></div><div></div><div></div>"
+                document.getElementById('top').appendChild(loading);
+                //alert("Изображение отправлено на проверку");
+
+                let response = await fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+
+                let result = await response.json();
+                document.getElementById('result').innerHTML = result.message; //сервер должен вернуть ответ в формате "{message:'Ваше изображение - фейк'}"
+
+                document.getElementById('top').querySelector('lds-facebook').remove()
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $("document").ready(function () {
+
+                $('input[type=file]').on("change", function () {
+
+                    var $files = $(this).get(0).files;
+
+                    if ($files.length) {
+
+                        // Reject big files
+                        if ($files[0].size > $(this).data("max-size") * 1024) {
+                            console.log("Please select a smaller file");
+                            return false;
+                        }
+
+                        // Replace ctrlq with your own API key
+                        var apiUrl = 'https://api.imgur.com/3/image';
+                        var apiKey = '620e8fb724910b6';
+
+                        var formData = new FormData();
+                        formData.append("image", $files[0]);
+
+                        var settings = {
+                            "async": true,
+                            "crossDomain": true,
+                            "url": apiUrl,
+                            "method": "POST",
+                            "datatype": "json",
+                            "headers": {
+                                "Authorization": "Client-ID " + apiKey
+                            },
+                            "processData": false,
+                            "contentType": false,
+                            "data": formData,
+                            beforeSend: function (xhr) {
+                                console.log("Uploading image to Imgur");
+                            },
+                            success: function (res) {
+                                console.log(res.data.link);
+
+                            },
+                            error: function () {
+                                alert("Uploading is failed");
+                            }
+                        }
+                        $.ajax(settings).done(function (response) {
+                            console.log("Uploading is done");
+                        });
+                    }
+                });
+            });
+        </script>
+
+
+
+        <form id="upload_image_form" method="post" enctype="multipart/form-data"
+                action="{% url 'process_app:upload_image' %}" onsubmit="sendImage(this)">
+            {% csrf_token %}
+            <p>Загрузите картину в формате JPEG, PNG</p>
+            <p>
+                <input type="file" class="imgur" name="img" accept="image/*"
+                       onchange="renderImage(this)">
+                <input type="submit" value="Отправить на проверку">
+            </p>
+        </form>
+        <img id='render' src="" alt='Изображение'>
+        <div id='result'></div>
+
+{% endblock content %}
