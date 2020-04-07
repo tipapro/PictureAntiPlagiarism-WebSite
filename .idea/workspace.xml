@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="42db815f-8547-4b5e-9f0c-6840c00551ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/luna-sputnik-poverkhnost-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antiplagiat/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiat/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +26,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1a4wLECbfxGMAs5HTKHVlh6t8Ms" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />

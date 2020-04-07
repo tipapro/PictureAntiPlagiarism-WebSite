@@ -33,4 +33,4 @@ def upload_image(request):
     #             url = fs.url(name)
     # else:
     #     form = UploadedImageForm()
-    return render(request, 'process_app/index.html')
+    return render(request, 'process_app/process.html')
