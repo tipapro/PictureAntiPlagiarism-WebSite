@@ -1,5 +1,15 @@
 {% extends "process_app/base.html" %}
 {% block content %}
-    <p>Процесс поиска идёт</p>
+    <script  language="JavaScript">
+        var loading = document.createElement('div');
+        loading.classList.add('lds-facebook');
+        loading.innerHTML = "<div></div><div></div><div></div>";
+        document.getElementById('top').appendChild(loading);
+    </script>
 
+    <p>Процесс поиска идёт</p>
+    <form id="upload_image_form" method="post" enctype="multipart/form-data">{% csrf_token %}
+
+
+    </form>
 {% endblock content %}

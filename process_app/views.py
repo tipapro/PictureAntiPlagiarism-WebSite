@@ -5,6 +5,16 @@ from django.utils.datastructures import MultiValueDictKeyError
 
 from process_app.models import UploadedImage
 from process_app.forms import UploadedImageForm
+from .similar_pictures_finder import SimilarPicturesFinder
+
+import os
+database_url = os.environ['DATABASE_URL']
+imgur_client_id = os.environ['IMGUR_CLIENT_ID']
+
+
+a = SimilarPicturesFinder
+# список похожих картинок
+similar_pictures_output = []
 
 
 def index(request):
@@ -27,8 +37,13 @@ def upload_image(request):
                 image=img
             )
             obj.save()
-            print(obj)
+            processing()
         return render(request, 'process_app/process.html')
     else:
         form = UploadedImageForm()
     return render(request, 'process_app/index.html', {'form': form})
+
+
+def processing():
+
+    pass
