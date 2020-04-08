@@ -6,12 +6,6 @@
         </script>
 
         <script  type="text/javascript">
-            function sleep(ms) {
-               return new Promise(resolve => setTimeout(resolve, ms));
-            }
-        </script>
-
-        <script  type="text/javascript">
             // Отображение загруженного изображения
             function renderImage(input) {
                 if (input.files && input.files[0]) {
@@ -45,18 +39,19 @@
 <!--        </script>-->
 
 
-        <script  type="text/javascript">
+        <script  language="JavaScript">
             // Обработка нажатия на кнопку
             var flag = false;
+
             $("document").ready(function () {
 
                 $('#image_input').on('change', () => {
                     document.getElementById('result').innerHTML = "";
                     var exp = $('#image_input').val().split('.').pop().toString();
+
                     if (!(exp == 'png' || exp == 'jpg')) {
                         document.getElementById('result').innerHTML = "Ошибка!" + '<br />' +
                                                         "Выберите изображения .jpg или .png";
-                        flag = false;
                     }
                     else {
                         flag = true;
@@ -78,47 +73,34 @@
                             loading.classList.add('lds-facebook');
                             loading.innerHTML = "<div></div><div></div><div></div>";
                             document.getElementById('top').appendChild(loading);
-                        }
-                        else {
 
+                            //Отправка формы серверу
+                            //И получение ответа от сервера об успешной загрузке
+
+                            document.getElementById('result').innerHTML = "Изображение успешно загружено";
                         }
                     }
                     else {
-
+                        flag = false;
                     }
                 });
             });
 
-            function myFunction() {
+            function boolFunction() {
                 if (flag) return true;
                 else return false;
             }
         </script>
 
-<!--        <script lang="javascript">-->
-<!--            $('#upload_image_form').submit(function(event){-->
-<!--                var text = $(this).find('input[type="name"]');-->
-<!--                if( text.val().split('.').pop() == 'jpeg' ){-->
-<!--                   return true;-->
-<!--                }-->
-<!--                else {-->
-<!--                    document.getElementById('result').innerHTML = "Выберите изображения .jpeg или .png";-->
-<!--                    return false;-->
-<!--                }-->
-<!--            });-->
-<!--        </script>-->
-
-
         <form id="upload_image_form" method="post" enctype="multipart/form-data"
-              onsubmit="return myFunction();" action="{% url 'process_app:upload_image' %}">
-            {% csrf_token %}
+              onsubmit="return boolFunction();" action="{% url 'process_app:upload_image' %}"> {% csrf_token %}
             <p>Загрузите картину в формате JPEG, PNG</p>
             <p>
-                <input id = "image_input" type="file" class="imgur" name="img"
+                <input id = "image_input" type="file" name="image"
                        accept="image/*" onchange="renderImage(this)">
                 <input type="submit" value="Отправить на проверку">
             </p>
         </form>
         <img id='render' src="" >
-        <div id='result'> </div>
+        <div id='result'></div>
 {% endblock content %}

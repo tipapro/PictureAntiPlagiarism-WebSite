@@ -22,15 +22,13 @@ def upload_image(request):
     if request.method == 'POST':
         form = UploadedImageForm(request.POST, request.FILES,)
         if form.is_valid():
-            form.save()
-            try:
-                uploaded_image = request.FILES['img']
-            except MultiValueDictKeyError:
-                pass
-            else:
-                fs = FileSystemStorage()
-                name = fs.save(uploaded_image.name, uploaded_image)
-                url = fs.url(name)
+            img = form.cleaned_data.get("image")
+            obj = UploadedImage.objects.create(
+                image=img
+            )
+            obj.save()
+            print(obj)
+        return render(request, 'process_app/process.html')
     else:
         form = UploadedImageForm()
-    return render(request, 'process_app/process.html', )
+    return render(request, 'process_app/index.html', {'form': form})

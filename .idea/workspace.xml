@@ -4,7 +4,11 @@
     <list default="true" id="42db815f-8547-4b5e-9f0c-6840c00551ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/97857a378bf5a73059be9ab25501e788--mona-lisa-technological-change.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/process.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,9 +70,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586252279181" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586338294283">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586348809288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586338294283" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586348809288" />
   </component>
 </project>
