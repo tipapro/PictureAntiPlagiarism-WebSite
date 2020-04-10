@@ -3,11 +3,12 @@ import json
 from .module import similar_image_finder as sif
 from os import listdir
 from os.path import isfile, join
-from antiplagiat.settings import MEDIA_URL
+from antiplagiat.settings import MEDIA_URL, DEBUG
 import os
 
-from dotenv import load_dotenv
-load_dotenv('env_keys.env')
+if DEBUG:
+    from dotenv import load_dotenv
+    load_dotenv('env_keys.env')
 
 database_url = os.environ['DATABASE_URL']
 imgur_client_id = os.environ['CLIENT_ID']
