@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42db815f-8547-4b5e-9f0c-6840c00551ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antiplagiat/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiat/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/module/similar_image_finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/module/similar_image_finder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/module/vectorization_model.h5" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

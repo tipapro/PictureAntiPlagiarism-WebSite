@@ -5,9 +5,10 @@ from os import listdir
 from os.path import isfile, join
 from antiplagiat.settings import MEDIA_URL
 import os
-from dotenv import load_dotenv
 
+from dotenv import load_dotenv
 load_dotenv('env_keys.env')
+
 database_url = os.environ['DATABASE_URL']
 imgur_client_id = os.environ['CLIENT_ID']
 
