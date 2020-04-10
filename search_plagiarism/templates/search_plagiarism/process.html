@@ -1,0 +1,48 @@
+{% extends "search_plagiarism/base.html" %}
+{% block content %}
+
+    <script  type="text/javascript"
+             src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script  language="JavaScript">
+
+        function pause() {
+            return new Promise((res) => setTimeout(res, 500));
+        }
+
+        window.onload = function() {
+            document.getElementById('process_text').innerHTML = "Процесс поиска идёт";
+            //Анимация
+            for (let i = 0; i < 5; i++) {
+                var loading = document.createElement('div');
+                loading.classList.add('lds-facebook');
+                loading.innerHTML = "<div></div><div></div><div></div>";
+                document.getElementById('top').appendChild(loading);
+            }
+            await pause();
+        };
+
+        $('#result').on('change', () => {
+            $('div').remove('.lds-facebook)
+            document.getElementById('process_text').innerHTML = "Результаты поиска";
+        });
+
+    </script>
+
+
+    <p>Загруженное изображение</p>
+    <p>
+        <img src="..{{MEDIA_URL}}{{ uploaded_image }}">
+    </p>
+    <div id='process_text'></div>
+    <div id='result'>
+        <form method="get" enctype="multipart/form-data">{% csrf_token %}
+            <p>
+                {% for similar_image in similar_images %}
+                    <img src="..{{MEDIA_URL}}result/{{ similar_image }}" width="250" height="250">
+                {% endfor %}
+            </p>
+        </form>
+    </div>
+{% endblock content %}
