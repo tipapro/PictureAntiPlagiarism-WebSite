@@ -7,8 +7,7 @@ from .views import *
 
 
 urlpatterns = [
-    path('', index, name='index'),
-    path('processing/', upload_image, name='upload_image'),
+    path('', index_upload_image, name='index'),
     path('result/', result, name='result'),
 ]
 

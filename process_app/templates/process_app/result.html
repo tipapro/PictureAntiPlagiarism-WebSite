@@ -1,4 +1,18 @@
 {% extends "process_app/base.html" %}
 {% block content %}
 
+    <form method="get" enctype="multipart/form-data">{% csrf_token %}
+        <p>Загруженное изображение</p>
+        <p>
+        <img src="..{{MEDIA_URL}}{{ uploaded_image }}">
+        </p>
+        <p>Результаты поиска</p>
+        <p>
+        {% for similar_image in similar_images %}
+            <img src="..{{MEDIA_URL}}result/{{ similar_image }}" width="250" height="250">
+        {% endfor %}
+        </p>
+
+    </form>
+
 {% endblock content %}

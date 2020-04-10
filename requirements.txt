@@ -9,3 +9,4 @@ Pillow
 protobuf
 keras
 opencv-python
+tensorflow

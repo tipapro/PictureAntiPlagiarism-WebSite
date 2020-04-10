@@ -1,15 +1,22 @@
 {% extends "process_app/base.html" %}
 {% block content %}
     <script  language="JavaScript">
-        var loading = document.createElement('div');
-        loading.classList.add('lds-facebook');
-        loading.innerHTML = "<div></div><div></div><div></div>";
-        document.getElementById('top').appendChild(loading);
+        function sleep(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        window.onload = function() {
+            for (let i = 0; i < 5; i++) {
+                var loading = document.createElement('div');
+                loading.classList.add('lds-facebook');
+                loading.innerHTML = "<div></div><div></div><div></div>";
+                document.getElementById('top').appendChild(loading);
+                // await sleep(1);
+            }
+        };
+
     </script>
 
     <p>Процесс поиска идёт</p>
-    <form id="upload_image_form" method="post" enctype="multipart/form-data">{% csrf_token %}
-
-
-    </form>
+    <div id='result'></div>
 {% endblock content %}
