@@ -4,6 +4,9 @@ from scipy.spatial import distance
 from .data_provider import ImageDataProvider
 import numpy as np
 from .imgur_provider import ImgurClient
+from antiplagiat.settings import STATIC_URL
+
+path_to_model = 'antiplagiat' + STATIC_URL + 'vectorization_model.h5'
 
 
 class SimilarImageFinder:
@@ -11,7 +14,7 @@ class SimilarImageFinder:
         self.__imgur_client_id__ = imgur_client_id
         self.__database_url__ = database_url
         self.__model__ = VectorizationModel()
-        self.__model__.prepare_vectorization_model('vectorization_model.h5')
+        self.__model__.prepare_vectorization_model(path_to_model)
         self.__iterator__ = ImageIterator(database_url)
 
     def find_similar_images(self, image_path, count_of_similar_image, progress_notification=None):

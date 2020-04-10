@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42db815f-8547-4b5e-9f0c-6840c00551ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AntiPlagiatProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AntiPlagiatProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/logo-icon-jira.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/process_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/output/pic9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/process.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/templates/process_app/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/templates/process_app/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/module/similar_image_finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_app/module/similar_image_finder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_app/module/vectorization_model.h5" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +65,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1586424969273" />
-    <state x="683" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586368850013">
+    <state x="683" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586510833553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="683" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586368850013" />
+    <state x="683" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586510833553" />
     <state x="430" y="323" key="FileChooserDialogImpl" timestamp="1586425875712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -95,10 +77,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586429772457" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586500193505">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586512258811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586500193505" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586512258811" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

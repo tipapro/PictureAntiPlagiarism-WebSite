@@ -4,9 +4,12 @@ from .module import similar_image_finder as sif
 from os import listdir
 from os.path import isfile, join
 from antiplagiat.settings import MEDIA_URL
+import os
+from dotenv import load_dotenv
 
-database_url = 'db.sqlite3'
-imgur_client_id = '620e8fb724910b6'
+load_dotenv('env_keys.env')
+database_url = os.environ['DATABASE_URL']
+imgur_client_id = os.environ['CLIENT_ID']
 
 
 class UploadedImage(models.Model):
@@ -17,13 +20,14 @@ class UploadedImage(models.Model):
         return self.imageURL.name + ": " + self.similar_images_list
 
     def get_images_list(self):
-        # sif_obj = sif.SimilarImageFinder(database_url, imgur_client_id)
-        # images_list = sif_obj.find_similar_images(self.imageURL, 5)
+        sif_obj = sif.SimilarImageFinder(database_url, imgur_client_id)
+        print()
 
+        # images_list = sif_obj.find_similar_images(MEDIA_URL + object.imageURL.name, 10)
         # Тестовая загрузка
-        mypath = 'media\\' + 'result'
-        images_list = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-        return images_list
+        # mypath = 'media\\' + 'result'
+        # images_list = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+        # return images_list
 
     def set_similar_images_list(self, images_list):
         self.similar_images_list = json.dumps(images_list)
