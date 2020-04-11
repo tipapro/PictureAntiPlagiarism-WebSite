@@ -7,6 +7,7 @@ from .views import *
 
 urlpatterns = [
     path('', index_upload_image, name='index'),
+    path('result/', display_similar_images, name='display'),
 ]
 
 if settings.DEBUG:

@@ -1,7 +1,9 @@
 {% extends "search_plagiarism/base.html" %}
 {% block content %}
 
-    <form method="get" enctype="multipart/form-data">{% csrf_token %}
+    <form method="post" enctype="multipart/form-data"
+          action="{% url 'search_plagiarism:display' %}" >{% csrf_token %}
+        <input type="submit" value="Получить">
         <p>Загруженное изображение</p>
         <p>
             <img src="..{{MEDIA_URL}}{{ uploaded_image }}">

@@ -4,9 +4,9 @@ from scipy.spatial import distance
 from .data_provider import ImageDataProvider
 import numpy as np
 from .imgur_provider import ImgurClient
-from antiplagiat.settings import STATIC_URL
+from antiplagiarism.settings import STATIC_URL
 
-path_to_model = 'antiplagiat' + STATIC_URL + 'vectorization_model.h5'
+path_to_model = 'antiplagiarism' + STATIC_URL + 'vectorization_model.h5'
 
 
 class SimilarImageFinder:
@@ -21,6 +21,7 @@ class SimilarImageFinder:
         """
         :returns: (image_ids, probability), 0 <= probability <= 1
         """
+        print(image_path)
         vec = self.__model__.vectorize(image_path)
         image_ids, probability = self.find_closest_vectors(vec, self.__iterator__, count_of_similar_image)
         probability = probability / 2

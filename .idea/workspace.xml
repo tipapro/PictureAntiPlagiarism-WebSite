@@ -1,11 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="241c8a6d-1576-494b-8500-b5da2f13d37b" name="Default Changelist" comment="" />
+    <list default="true" id="241c8a6d-1576-494b-8500-b5da2f13d37b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_0YwemxW.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_CFjqFmK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_EmpJtyV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_Lp2b6Zi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_SO3rtog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_XCwigeJ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_iY6I2Nj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_jkAyzSR.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_ppqJ3xZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/868eb9bb1c04c69d2a0092afaa08cfe4--lisa-s-mona-lisa_xxWrJ2L.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/97857a378bf5a73059be9ab25501e788--mona-lisa-technological-change.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/97857a378bf5a73059be9ab25501e788--mona-lisa-technological-change_1ECtiZg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/97857a378bf5a73059be9ab25501e788--mona-lisa-technological-change_r5OMeAl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/97857a378bf5a73059be9ab25501e788--mona-lisa-technological-change_xhb06nI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/97857a378bf5a73059be9ab25501e788--mona-lisa-technological-change_yzjLaEF.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/logo-icon-jira_1idIsP3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/logo-icon-jira_GIcznVY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/logo-icon-jira_SFEKrTj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/logo-icon-jira_okkcMGH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/luna-sputnik-poverkhnost-1_RZT7max.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/luna-sputnik-poverkhnost-1_v8keAPf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_5xAiPnd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_6dLq3DI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_6diwReP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_Afslngk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_Erqx1t9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_Gp1mixH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_Is2mqNL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_fuLZSK1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_ieQFnYa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_j5e9RvI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_lnWCnvV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_pEu4FnT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/uploaded/priroda-nebo-ozero-oblaka_z4MZwyu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plagiarism/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plagiarism/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plagiarism/search_module/postgresql.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/search_module/postgresql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plagiarism/search_module/similar_image_finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/search_module/similar_image_finder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plagiarism/search_module/vectorization_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/search_module/vectorization_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/process.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plagiarism/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_plagiarism/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aLxnkUps2qjOezK5SX17djwJrQ" />
   <component name="ProjectViewState">
@@ -14,7 +66,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -33,5 +87,11 @@
       <updated>1586528843909</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586587176977">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586587176977" />
   </component>
 </project>

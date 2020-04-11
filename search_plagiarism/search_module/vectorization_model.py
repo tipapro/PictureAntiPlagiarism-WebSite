@@ -2,11 +2,12 @@ import cv2
 from keras.applications import inception_v3
 from keras.engine import Model
 from numpy import zeros
+from PIL import Image
 
 
 class VectorizationModel:
     def prepare_image(self, image_path):
-        img = cv2.imread(image_path)
+        img = cv2.imread(image_path, 0)
         img = cv2.resize(img, (299, 299))
         return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)    # convert to keras format
 
