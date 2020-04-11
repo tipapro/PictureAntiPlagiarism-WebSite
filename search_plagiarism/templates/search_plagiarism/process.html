@@ -1,0 +1,41 @@
+{% extends "search_plagiarism/base.html" %}
+{% block content %}
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            const sleep = (n = 500) => new Promise((res) => setTimeout(res, n));
+
+            const setCurrentProgress = (progressBatId, value) => {
+                const progressInner = document.getElementById(progressBatId);
+                progressInner.style.width = `${now}%`;
+            };
+
+            const startProgressPolling = async (progressBatId) => {
+                let now = 0;
+                while (now < 100) {
+                    // здесь взять информацию о текущем прогрессе
+                    // const updatedNow = await fetch('http://<your backend url>.com');
+                    // setCurrentProgress(progressBatId, updatedNow);
+
+                    // for debug
+                    await sleep(200);
+                    setCurrentProgress(now++);
+                }
+            };
+
+            startProgressPolling('progress1');
+        });
+    </script>
+
+
+    <p>Поиск плагиата</p>
+    <div class="progress">
+        <div data-percent="40" id="progress1" class="progress-inner"></div>
+    </div>
+{% endblock content %}

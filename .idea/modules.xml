@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AntiPlagiatProject.iml" filepath="$PROJECT_DIR$/.idea/AntiPlagiatProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pognali.iml" filepath="$PROJECT_DIR$/.idea/pognali.iml" />
     </modules>
   </component>
 </project>

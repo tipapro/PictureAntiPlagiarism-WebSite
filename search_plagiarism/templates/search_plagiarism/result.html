@@ -1,0 +1,20 @@
+{% extends "search_plagiarism/base.html" %}
+{% block content %}
+
+    <form method="post" enctype="multipart/form-data"
+          action="{% url 'search_plagiarism:display' %}" >{% csrf_token %}
+        <input type="submit" value="Получить">
+        <p>Загруженное изображение</p>
+        <p>
+            <img src="..{{MEDIA_URL}}{{ uploaded_image }}">
+        </p>
+        <p>Результаты поиска</p>
+        <p>
+            {% for similar_image in similar_images %}
+                <img src="..{{MEDIA_URL}}result/{{ similar_image }}" width="250" height="250">
+            {% endfor %}
+        </p>
+
+    </form>
+
+{% endblock content %}
