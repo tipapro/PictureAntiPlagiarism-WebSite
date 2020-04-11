@@ -8,6 +8,6 @@ scipy
 Pillow
 protobuf
 opencv-python
-cntk
+cntk==2.7
 keras
 setuptools==41.0.0
