@@ -7,8 +7,6 @@ psycopg2
 scipy
 Pillow
 protobuf
-opencv-python
-libsm6
 Theano
 keras
 setuptools==41.0.0
