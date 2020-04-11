@@ -10,4 +10,4 @@ protobuf
 opencv-python
 tensorflow
 keras
-etuptools==41.0.0
+setuptools==41.0.0
