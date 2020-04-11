@@ -71,11 +71,11 @@
 
         <form id="upload_image_form" method="post" enctype="multipart/form-data"
               onsubmit="return boolFunction();" action="{% url 'search_plagiarism:index' %}"> {% csrf_token %}
-            <p>Загрузите картину в формате JPEG, PNG</p>
+            <p>Загрузите или перетащите картинку в формате JPEG, PNG</p>
             <p>
                 <input id = "image_input" type="file" name="image"
                        accept="image/*" onchange="renderImage(this)">
-                <input type="submit" value="Отправить на проверку">
+                <input type="submit" value="Отправить на проверку" id="otpr">
             </p>
         </form>
         <img id='render' src="" >
