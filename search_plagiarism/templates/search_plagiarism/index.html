@@ -54,6 +54,10 @@
                             loading.innerHTML = "<div></div><div></div><div></div>";
                             document.getElementById('top').appendChild(loading);
 
+                        }
+
+                        const yes = await fetch('localhost/{{ MEDIA_URL }}/$('#image_input').val()')
+                        if (yes) {
                             document.getElementById('result').innerHTML = "Изображение успешно загружено";
                         }
                     }

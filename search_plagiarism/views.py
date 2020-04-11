@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 from .models import *
 from search_plagiarism.forms import UploadedImageForm, SimilarImagesForm
@@ -25,4 +26,5 @@ def display_similar_images(request):
     else:
         obj.start_finding()
     return render(request, 'search_plagiarism/result.html',
-                  {'uploaded_image': obj.image, 'similar_images': obj.get_similar_images_list()})
+                  {'uploaded_image': obj.image, 'similar_images': obj.get_similar_images_list(),
+                   'probability': obj.get_images_probability_list()})

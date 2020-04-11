@@ -2,7 +2,6 @@ import cv2
 from keras.applications import inception_v3
 from keras.engine import Model
 from numpy import zeros
-from PIL import Image
 
 
 class VectorizationModel:

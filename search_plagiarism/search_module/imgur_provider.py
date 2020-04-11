@@ -32,11 +32,12 @@ class ImgurClient:
         :returns: path of image file
         """
         file = open('new_file', 'wb')
-        response = requests.get(self.__get_image_url__ + image_id, headers={'Authorization' : 'Client-ID ' + self.client_id})
+        response = requests.get(self.__get_image_url__ + image_id, headers={'Authorization': 'Client-ID ' + self.client_id})
         response.raise_for_status()
         link = response.json()['data']['link']
+        print(link)
         response = requests.get(link)
         response.raise_for_status()
         file.write(response.content)
         file.close()
-        return file.name
+        return link['link']
