@@ -53,12 +53,7 @@
                             loading.classList.add('lds-facebook');
                             loading.innerHTML = "<div></div><div></div><div></div>";
                             document.getElementById('top').appendChild(loading);
-
-                        }
-
-                        const yes = await fetch('localhost/{{ MEDIA_URL }}/$('#image_input').val()')
-                        if (yes) {
-                            document.getElementById('result').innerHTML = "Изображение успешно загружено";
+                            document.getElementById('result').innerHTML = "Изображение загружается";
                         }
                     }
                     else {
@@ -68,13 +63,20 @@
             });
             // если все условия соблюдены, файл загружается
             function boolFunction() {
-                if (flag) return true;
+                if (flag) {
+                 console.log('1111');
+                 windows.location.href = {% url 'search_plagiarism:display' %};
+                 return true;
+                }
                 else return false;
             }
+
         </script>
 
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
         <form id="upload_image_form" method="post" enctype="multipart/form-data"
-              onsubmit="return boolFunction();" action="{% url 'search_plagiarism:index' %}"> {% csrf_token %}
+              onsubmit="return boolFunction();" action="{% url 'search_plagiarism:upload_image' %}"> {% csrf_token %}
             <p>Загрузите картину в формате JPEG, PNG</p>
             <p>
                 <input id = "image_input" type="file" name="image"

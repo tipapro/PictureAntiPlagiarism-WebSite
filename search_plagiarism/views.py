@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import JsonResponse
 
 from .models import *
 from search_plagiarism.forms import UploadedImageForm, SimilarImagesForm
@@ -14,10 +14,13 @@ def index_upload_image(request):
             obj.image = img
             obj.save()
             print(obj)
-        return render(request, 'search_plagiarism/process.html')
+            return render(request, 'search_plagiarism/process.html')
     else:
-        form = UploadedImageForm()
-    return render(request, 'search_plagiarism/index.html', {'form': form})
+        return render(request, 'search_plagiarism/index.html')
+
+
+def upload_success(request):
+    pass
 
 
 def display_similar_images(request):
