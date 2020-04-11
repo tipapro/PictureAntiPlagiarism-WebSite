@@ -1,14 +1,14 @@
-import cv2
 from keras.applications import inception_v3
 from keras.engine import Model
+from keras.preprocessing.image import img_to_array
+from PIL import Image
 from numpy import zeros
-
 
 class VectorizationModel:
     def prepare_image(self, image_path):
-        img = cv2.imread(image_path, 0)
-        img = cv2.resize(img, (299, 299))
-        return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)    # convert to keras format
+        img = Image.open(image_path)
+        img.resize((299, 299), resample=Image.BILINEAR)
+        return img_to_array(img)   # convert to keras format
 
     def prepare_vectorization_model(self, weights_path):
         self.__model__ = inception_v3.InceptionV3(include_top=True, weights=weights_path, classes=7)
