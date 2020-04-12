@@ -1,1 +1,1 @@
-web: gunicorn antiplagiarism.wsgi
+web: gunicorn antiplagiarism.wsgi --log-file -
