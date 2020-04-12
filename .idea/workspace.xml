@@ -6,22 +6,7 @@
       <change beforePath="$PROJECT_DIR$/antiplagiarism/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiarism/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/antiplagiarism/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiarism/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/result/pic9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/uploaded/logo-icon-jira_nV22A6S.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/search_plagiarism/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_plagiarism/search_module/image_iterator.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/search_module/image_iterator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_plagiarism/search_module/similar_image_finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/search_module/similar_image_finder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_plagiarism/search_module/vectorization_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/search_module/vectorization_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/process.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/result.html" afterDir="false" />
@@ -70,14 +55,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="723" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586615328427" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1586705753701">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1586710442284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586705753701" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586672456203">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586710442284" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586707037972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586672456203" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586707037972" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

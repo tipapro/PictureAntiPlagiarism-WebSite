@@ -1,20 +1,20 @@
 {% extends "search_plagiarism/base.html" %}
 {% block content %}
-<!--    <script  type="text/javascript"-->
-<!--             src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">-->
-<!--    </script>-->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script  type="text/javascript"
+                 src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-<!--    <script  language="JavaScript">-->
-<!--        $("document").ready(function () {-->
-<!--            $( "#start_form" ).submit(function(e) {-->
-<!--                $('#load1').css("opacity", 1);-->
-<!--            });-->
-<!--        });-->
-<!--    </script>-->
+        <script  language="JavaScript">
+            $("document").ready(function () {
+                $('#start_form').on('submit', () => {
+                    $('#load1').css("opacity", 1);
+                });
+            });
+        </script>
 
 
-    <p>Изображение успешно загружено</p>
+    <div id="ptext">Изображение загружено</div>
     <form id="start_form" method="post" enctype="multipart/form-data"
           action="{% url 'search_plagiarism:display' %}">{% csrf_token %}
         <input type="submit" id="otpr1" value="Начать поиск">
@@ -30,6 +30,7 @@
             autoplay>
         </lottie-player>
     </div>
+
 
 
 {% endblock content %}

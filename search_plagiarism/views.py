@@ -18,7 +18,6 @@ def index_upload_image(request):
 
 
 def display_similar_images(request):
-    print('displaigfdsa')
     if request.method == 'GET':
         return render(request, 'search_plagiarism/result.html')
     else:
