@@ -4,14 +4,6 @@
     <list default="true" id="241c8a6d-1576-494b-8500-b5da2f13d37b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/antiplagiarism/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiarism/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/antiplagiarism/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiarism/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_plagiarism/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/process.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/templates/search_plagiarism/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_plagiarism/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_plagiarism/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_plagiarism/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +51,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586710442284" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586707037972">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586716059672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586707037972" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586716059672" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
