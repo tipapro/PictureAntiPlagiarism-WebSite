@@ -16,7 +16,7 @@ if DEBUG:
     load_dotenv('env_keys.env')
 
 database_url = os.environ['DATABASE_URL']
-imgur_client_id = os.environ['CLIENT_ID']
+imgur_client_id = os.environ['IMGUR_CLIENT_ID']
 
 
 class UploadedImage(models.Model):
