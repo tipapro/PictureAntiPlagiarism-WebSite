@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
+#otpr, #otpr1 {
+    border-radius: 5px;
+    padding: 3px 4px;
+    font-size: 0.5em;
+    background-color:rgb(209, 243, 241) ;
+    /*text-shadow: #454545 0 0 2px;*/
+    cursor: pointer;
+    color: black;
+    font-family: 'Spicy Rice', cursive;
+}
+
 .lds-facebook {
     display: inline-block;
     position: relative;
@@ -391,19 +402,7 @@ font-size: 0.9em;
     color: black;
     font-family: 'Spicy Rice', cursive; 
     margin-top: 30px;
-    
 
-    
 }
 
-#otpr {
-    
-    border-radius: 5px;
-    padding: 3px 4px;
-    font-size: 0.5em;
-    background-color:rgb(209, 243, 241) ;
-    /*text-shadow: #454545 0 0 2px;*/
-    cursor: pointer;
-    color: black;
-    font-family: 'Spicy Rice', cursive; 
-}
+
