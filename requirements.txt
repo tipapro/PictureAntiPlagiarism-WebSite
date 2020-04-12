@@ -7,7 +7,6 @@ psycopg2
 scipy
 Pillow
 protobuf
-opencv-python
-tensorflow
+Theano
 keras
-etuptools==41.0.0
+setuptools==41.0.0
