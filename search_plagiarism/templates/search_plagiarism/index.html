@@ -63,11 +63,7 @@
             });
             // если все условия соблюдены, файл загружается
             function boolFunction() {
-                if (flag) {
-                 console.log('1111');
-                 windows.location.href = {% url 'search_plagiarism:display' %};
-                 return true;
-                }
+                if (flag) return true;
                 else return false;
             }
 
