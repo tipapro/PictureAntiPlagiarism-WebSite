@@ -4,11 +4,12 @@ from keras.preprocessing.image import img_to_array
 from PIL import Image
 from numpy import zeros
 
+
 class VectorizationModel:
     def prepare_image(self, image_path):
         img = Image.open(image_path)
-        img.resize((299, 299), resample=Image.BILINEAR)
-        return img_to_array(img)   # convert to keras format
+        img = img.resize((299, 299), resample=Image.BILINEAR)
+        return img_to_array(img)  # convert to keras format
 
     def prepare_vectorization_model(self, weights_path):
         self.__model__ = inception_v3.InceptionV3(include_top=True, weights=weights_path, classes=7)

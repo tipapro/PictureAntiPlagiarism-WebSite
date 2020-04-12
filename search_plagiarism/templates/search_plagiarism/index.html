@@ -5,6 +5,8 @@
                  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
         </script>
 
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
         <script  type="text/javascript">
             // Отображение загруженного изображения
             function renderImage(input) {
@@ -21,7 +23,6 @@
         </script>
 
         <script  language="JavaScript">
-            // Обработка нажатия на кнопку
             var flag = false;
 
             $("document").ready(function () {
@@ -49,10 +50,8 @@
                         // если все условия соблюдены, анимация отображается
                         if (flag) {
                             // Анимация загрузки
-                            var loading = document.createElement('div');
-                            loading.classList.add('lds-facebook');
-                            loading.innerHTML = "<div></div><div></div><div></div>";
-                            document.getElementById('top').appendChild(loading);
+                            $('#render').remove();
+                            $('#load').css("opacity", 1);
                         }
                     }
                     else {
@@ -65,21 +64,28 @@
                 if (flag) return true;
                 else return false;
             }
-
         </script>
 
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
         <form id="upload_image_form" method="post" enctype="multipart/form-data"
               onsubmit="return boolFunction();" action="{% url 'search_plagiarism:upload_image' %}"> {% csrf_token %}
-            <p>Загрузите картину в формате JPEG, PNG</p>
             <p>Загрузите или перетащите картинку в формате JPEG, PNG</p>
             <p>
                 <input id = "image_input" type="file" name="image"
                        accept="image/*" onchange="renderImage(this)">
-                <input type="submit" value="Отправить на проверку" id="otpr">
+                <input type="submit" value="Загрузить" id="otpr">
             </p>
         </form>
         <img id='render' src="" >
-        <div id='result'></div>
+        <div id='load' align="center" style="opacity: 0">
+            <lottie-player
+                src="https://assets4.lottiefiles.com/private_files/lf30_H8JIIY.json"
+                background="transparent"
+                speed="1"
+                style="width: 200px; height: 200px;"
+                loop
+                autoplay>
+            </lottie-player>
+        </div>
+        <div id="result"></div>
 {% endblock content %}

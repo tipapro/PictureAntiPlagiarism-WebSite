@@ -6,6 +6,7 @@ import numpy as np
 from .imgur_provider import ImgurClient
 from antiplagiarism.settings import STATIC_URL
 
+
 path_to_model = 'antiplagiarism' + STATIC_URL + 'vectorization_model.h5'
 
 
@@ -33,14 +34,13 @@ class SimilarImageFinder:
         image_id = imgur_client.upload_image(image_path)
         db.append(image_id, vec)
 
-
     def find_closest_vectors(self, target_image_vec, other_images_vecs, n_similar_imgs):
         '''
         :returns: (image_ids, cosine_distances), 0 <= cosine_distances <= 2
         '''
         other_images_vecs.__iter__()
         arr = np.ndarray(n_similar_imgs)
-        image_ids = np.ndarray(n_similar_imgs, dtype=np.int)
+        image_ids = np.ndarray(n_similar_imgs, dtype=np.object)
         try:
             for i in range(0, n_similar_imgs):
                 image_ids[i], vec = other_images_vecs.__next__()

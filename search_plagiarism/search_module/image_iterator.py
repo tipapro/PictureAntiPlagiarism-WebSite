@@ -1,7 +1,7 @@
 from .data_provider import ImageDataProvider
 
 
-class ImageIterator():
+class ImageIterator:
     __chunk_size__ = 100
 
     def __init__(self, database_url):

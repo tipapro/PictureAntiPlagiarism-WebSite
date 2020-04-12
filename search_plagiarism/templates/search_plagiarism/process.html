@@ -1,41 +1,35 @@
 {% extends "search_plagiarism/base.html" %}
 {% block content %}
+<!--    <script  type="text/javascript"-->
+<!--             src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">-->
+<!--    </script>-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            const sleep = (n = 500) => new Promise((res) => setTimeout(res, n));
-
-            const setCurrentProgress = (progressBatId, value) => {
-                const progressInner = document.getElementById(progressBatId);
-                progressInner.style.width = `${now}%`;
-            };
-
-            const startProgressPolling = async (progressBatId) => {
-                let now = 0;
-                while (now < 100) {
-                    // здесь взять информацию о текущем прогрессе
-                    // const updatedNow = await fetch('http://<your backend url>.com');
-                    // setCurrentProgress(progressBatId, updatedNow);
-
-                    // for debug
-                    await sleep(200);
-                    setCurrentProgress(now++);
-                }
-            };
-
-            startProgressPolling('progress1');
-        });
-    </script>
+<!--    <script  language="JavaScript">-->
+<!--        $("document").ready(function () {-->
+<!--            $( "#start_form" ).submit(function(e) {-->
+<!--                $('#load1').css("opacity", 1);-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
 
 
-    <p>Поиск плагиата</p>
-    <div class="progress">
-        <div data-percent="40" id="progress1" class="progress-inner"></div>
+    <p>Изображение успешно загружено</p>
+    <form id="start_form" method="post" enctype="multipart/form-data"
+          action="{% url 'search_plagiarism:display' %}">{% csrf_token %}
+        <input type="submit" id="otpr1" value="Начать поиск">
+    </form>
+
+    <div align="center" id='load1' style="opacity: 0">
+        <lottie-player
+            src="https://assets4.lottiefiles.com/private_files/lf30_H8JIIY.json"
+            background="transparent"
+            speed="1"
+            style="width: 200px; height: 200px;"
+            loop
+            autoplay>
+        </lottie-player>
     </div>
+
+
 {% endblock content %}
