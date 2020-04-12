@@ -23,3 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(('search_plagiarism.urls', 'search_plagiarism'), namespace='search_plagiarism'))
 ] + static(MEDIA_URL, document_root=MEDIA_ROOT)
+
+if settings.DEBUG is True:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
