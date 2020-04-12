@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241c8a6d-1576-494b-8500-b5da2f13d37b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/antiplagiarism/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/antiplagiarism/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
