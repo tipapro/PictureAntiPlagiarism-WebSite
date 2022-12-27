@@ -9,4 +9,4 @@ Pillow
 protobuf
 Theano
 keras
-setuptools==41.0.0
+setuptools==65.5.1
